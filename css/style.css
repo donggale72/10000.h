@@ -1,0 +1,216 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OTEnjoystoriesBA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+html, body{
+    width:100%;
+    height: 100%; 
+}
+
+body {
+    
+    font-family: 'GmarketSansMedium';
+    background-color: #5B2386;
+    color: white;
+    
+    
+}
+
+/*body - section(contents) - div (wrapper) - div(5) 
+*/
+
+#contents{
+    display: flex;
+    justify-content: center;
+}
+.wrapper{
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    
+}
+
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+
+
+.title .clock_img {
+    position: relative;
+    width: 265px;
+    height: 265px;    
+}
+
+.title .title_img{
+    position: absolute;
+    margin-top: 80px;
+}
+
+.title .title_img img{
+    width: 600px;
+    height: auto;
+}
+
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.intro .intro_saying{
+    color: #F5DF4D;
+    font-family: 'OTEnjoystoriesBA'; 
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.intro .intro_explain{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.intro .quotes{
+    position: relative;
+    padding-top:20px; 
+}
+
+.intro .intro_explain p{
+    position: absolute;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-left: 62px;
+}
+
+.intro .intro_explain span{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    font-size: 22px
+    
+}
+
+
+.inputs .inputs_field{
+    display: flex;
+    padding: 20px;
+}
+
+.inputs .inputs_time{
+    
+    display: flex;
+    padding: 20px;
+
+}
+
+.inputs input{
+    
+    border-radius: 10px;
+    width: 220px;
+    height: 37px;
+    margin: -22px 20px 0px 20px;
+    padding: 10px;
+    border: none;
+    font-size:22px;
+    
+}
+
+.inputs input::placeholder {
+    
+    color: lightgray;
+    font-size: 22px;
+    font-family: 'GmarketSansMedium';
+}
+
+
+.start{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+
+.start .start_wrap{
+    display: flex;
+    align-items: center;
+}
+
+
+.start .start_wrap .start_button{
+    width: 460px;
+    height: 56px;
+    border-radius: 50px;
+    border:none;
+    background-color: #FCEE21;
+    font-size:20px;
+    font-family: 'GmarketSansMedium';
+    font-weight: bold;
+    color: #5B2386;
+    margin-left: 80px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.loading{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    
+}
+
+@keyframes rotate{
+    100%{transform: rotate(360deg); 
+    }
+}
+
+.loading .loading_wrap img {
+    
+    width: 100px;
+    height: auto;
+    animation: rotate 1.6s infinite linear;
+}
+
+
+.result{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    
+}
+
+.result .result_wrap{
+    font-size: 20px;
+}
+
+
