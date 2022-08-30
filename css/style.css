@@ -213,4 +213,10 @@ body {
     font-size: 20px;
 }
 
+.result span {
+    padding: 0 20px;
+    font-family: 'GmarketSansMedium';
+    font-weight: bold;
+    font-size:70px;
+}
 
