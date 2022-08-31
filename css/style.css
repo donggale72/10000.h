@@ -205,8 +205,7 @@ body {
     display: none;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 50px;
-    
+    margin-top: 100px;
 }
 
 .result .result_wrap{
@@ -220,3 +219,30 @@ body {
     font-size:70px;
 }
 
+.result .result_buttons{
+    
+    padding:100px
+}
+
+.result .result_buttons button{
+    width: 220px;
+    height: 56px;
+    border-radius: 50px;
+    border:none;
+    background-color: white;
+    font-size:20px;
+    font-family: 'GmarketSansMedium';
+    font-weight: bold;
+    color: #5B2386;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
+
+#coopyright p{
+    text-align: center;
+    padding : 80px
+    
+    
+}
