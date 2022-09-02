@@ -1,7 +1,7 @@
 const startButton = document.querySelector('.start_button');
 const modalButton = document.querySelector('.modal_button');
 const shareButton = document.querySelector('.share_button');
-
+const linkButton = document.querySelector('.link_button');
 
 const loading = document.querySelector('.loading');
 const result = document.querySelector('.result');
@@ -58,7 +58,7 @@ function click_start_button(){
     }
 
     loading.style.display = 'flex';
-    result.style.display = 'none'
+    result.style.display = 'none';
     setTimeout(after_click, 1500);
 
 }
@@ -76,5 +76,31 @@ function copy_url(){
     alert('URL이 복사되었습니다.');  
 }
 
+function open_modal(){
+    modal.style.display = 'flex';
+};
+
+function close_modal(){
+    modal.style.display = 'none';
+}
+
+
+window.onclick = function(event) {
+    if (event.target == modal){
+        close_modal();   
+    }
+}
+
+
+function move_link(){
+    var newWindow = window.open("about:blank");
+    var link = 'https://github.com/yebiny';
+    newWindow.location.href = link;
+}
+
+    
+
 startButton.addEventListener("click", click_start_button);
 shareButton.addEventListener("click", copy_url);
+modalButton.addEventListener("click", open_modal);
+linkButton.addEventListener("click", move_link);

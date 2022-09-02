@@ -240,6 +240,61 @@ body {
 }
 
 
+#modal{
+    display: none;
+    position: fixed;
+    
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;  
+    z-index: 10;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+#modal .modal_wrap{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 600px;
+    align-items: center;
+    border-radius: 30px;
+}
+
+
+#modal .cheer{
+    padding-top: 30px;
+    color: #5B2386;
+    font-family: 'OTEnjoystoriesBA';
+    text-align: center;
+}
+
+#modal .cheer h1{
+    font-size:80px;
+}
+
+#modal .cheer h3{
+    font-size:30px;
+}
+
+
+#modal .link_button{
+    margin-top: 20px;
+    font-family: 'GmarketSansMedium';
+    font-weight: bold;
+    color: #5B2386;
+    cursor: pointer;
+    width: 220px;
+    height: 56px;
+    border-radius: 50px;
+    border:none;
+    font-size:20px;
+    cursor: pointer;}
+
+
 #coopyright p{
     text-align: center;
     padding : 80px
