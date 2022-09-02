@@ -94,7 +94,7 @@ window.onclick = function(event) {
 
 function move_link(){
     var newWindow = window.open("about:blank");
-    var link = 'https://github.com/yebiny';
+    var link = 'https://github.com/donggale72';
     newWindow.location.href = link;
 }
 
